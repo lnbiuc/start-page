@@ -1,4 +1,4 @@
-import { pwa } from './app/config/pwa'
+import { VioletThemePreset } from './app/config/theme'
 import { appDescription } from './app/constants/index'
 
 export default defineNuxtConfig({
@@ -7,8 +7,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
-    '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    '@primevue/nuxt-module',
   ],
 
   devtools: {
@@ -73,5 +73,11 @@ export default defineNuxtConfig({
     },
   },
 
-  pwa,
+  primevue: {
+    options: {
+      theme: {
+        preset: VioletThemePreset,
+      },
+    },
+  },
 })
