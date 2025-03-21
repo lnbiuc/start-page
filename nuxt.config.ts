@@ -10,7 +10,10 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
-    'shadcn-nuxt'
+    'shadcn-nuxt',
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+    '@nuxtjs/color-mode'
   ],
   shadcn: {
     /**
@@ -22,5 +25,8 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
+  },
+  colorMode: {
+    classSuffix: ''
   }
 })
