@@ -1,0 +1,38 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        BigInt      @id @default(autoincrement())
+  username  String      @unique
+  password  String
+  email     String      @unique
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+}
+
+model Bookmark {
+  id         BigInt      @id @default(autoincrement())
+  userId     BigInt
+  title      String
+  url        String
+  category   String?
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+}
+
+model File {
+  id         BigInt      @id @default(autoincrement())
+  bookmarkId BigInt
+  type       String
+  data       Bytes
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+}

@@ -9,11 +9,13 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "dependencies": {
+  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af",
+  "devDependencies": {
     "@nuxt/eslint": "1.2.0",
     "@nuxt/fonts": "0.11.0",
     "@nuxt/icon": "1.11.0",
     "@nuxt/image": "1.10.0",
+    "@nuxt/vite-builder": "^3.16.1",
     "@nuxtjs/color-mode": "3.5.2",
     "@pinia/nuxt": "^0.10.1",
     "@unovis/ts": "^1.5.1",
@@ -24,7 +26,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-vue": "^8.5.2",
-    "eslint": "^9.0.0",
     "nuxt": "^3.16.1",
     "pinia": "^3.0.1",
     "reka-ui": "^2.1.0",
@@ -36,14 +37,17 @@
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "vue-sonner": "^1.3.0",
-    "zod": "^3.24.2"
-  },
-  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af",
-  "devDependencies": {
+    "zod": "^3.24.2",
     "@antfu/eslint-config": "^4.10.2",
     "@nuxtjs/tailwindcss": "^6.13.2",
+    "@prisma/client": "^6.5.0",
+    "@theinternetfolks/snowflake": "^1.3.0",
+    "@vue/devtools-shared": "^7.7.2",
     "eslint": "^9.22.0",
     "eslint-plugin-format": "^1.0.1",
-    "lucide-vue-next": "^0.483.0"
+    "hasown": "^2.0.2",
+    "lucide-vue-next": "^0.483.0",
+    "pg": "^8.14.1",
+    "prisma": "^6.5.0"
   }
 }
